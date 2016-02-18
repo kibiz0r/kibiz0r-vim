@@ -19,3 +19,6 @@
 [submodule "bundle/tcomment_vim"]
 	path = bundle/tcomment_vim
 	url = https://github.com/tomtom/tcomment_vim.git
+[submodule "bundle/bclose.vim"]
+	path = bundle/bclose.vim
+	url = https://github.com/rbgrouleff/bclose.vim.git
