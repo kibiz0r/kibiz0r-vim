@@ -10,9 +10,12 @@ filetype plugin indent on
 colorscheme vividchalk
 
 set so=7
-set fu
 set completeopt=longest,menuone
 set wildignore+=*.so,*.swp,*.zip,*.meta
+
+if has("gui_macvim")
+  set fu
+endif
 
 "Use system Python
 let g:ycm_path_to_python_interpreter = "/usr/bin/python"
@@ -104,6 +107,8 @@ noremap <F2> :w<CR>
 
 "This is the default value, setting it isn't actually necessary
 let g:OmniSharp_host = "http://localhost:2000"
+
+let g:OmniSharp_server_use_mono = 1
 
 "Set the type lookup function to use the preview window instead of the status line
 " let g:OmniSharp_typeLookupInPreview = 1
